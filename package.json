@@ -1,0 +1,53 @@
+{
+  "name": "ezui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "deploy": "gh-pages -d dist-docs",
+    "docs:build": "styleguidist build",
+    "start": "styleguidist server",
+    "predeploy": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yngrdyn/ezui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yngrdyn/ezui/issues"
+  },
+  "homepage": "http://yngrdyn.github.io/ezui",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@testing-library/react": "^11.0.4",
+    "babel-loader": "^8.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-styleguidist": "^11.1.0",
+    "rollup": "^2.28.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-scss": "^2.6.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "webpack": "^4.44.2"
+  },
+  "dependencies": {
+    "css-loader": "^4.3.0",
+    "gh-pages": "^3.1.0",
+    "node-sass": "^4.14.1",
+    "style-loader": "^1.2.1"
+  }
+}
