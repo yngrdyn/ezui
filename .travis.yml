@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "node"
+
+after_success:
+  - git config --global user.name "yngrdyn"
+  - git config --global user.email "yngrdyn@users.noreply.github.com"
+  - git remote rm origin
+  - git remote add origin https://yngrdyn:${GH_TOKEN}@github.com/yngrdyn/ezui.git
+  - npm run docs:build
+  - npm run deploy
